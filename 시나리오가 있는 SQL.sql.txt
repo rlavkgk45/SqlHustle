@@ -1,0 +1,37 @@
+- (주)엔콩 본사 -
+회장 : 이번 상반기 매출이 작년대비 얼마나 올랐지? 
+비서 : 20% 올랐습니다.
+회장 : 흠.. 만족스럽군... 이번 여름 휴가비로 100만씩 쏴야겠어.
+  
+         >>>>>select * from tab;
+         >>>>>select * from emp;
+         >>>>>select ename, nvl(comm, 0) comm from emp; 
+         
+회장 : 아참! 그런데  4등급 이상인 사원들은 주지마. 걔네는 월급 너무 많아
+
+         >>>>>select * from salgarde; 
+         >>>>>select ename, sal, com form emp where sal < 2001;
+         >>>>>select enmae, nvl(comm, 0)+100 comm from emp where sal<2001;
+
+회장 : 매출이 가장 높은데가 시카고 맞아?
+비서 : 네 
+회장 : 시카고 직원들은 월급 1% 인상시켜
+비서 : 네 알겠습니다! 
+    
+         >>>>>select * from dept;
+         >>>>>select ename, sal*1,01 sal from emp where deptno =30;
+
+회장 : 아 그리고 smith이 xx랑 ward이놈 둘다 일을 아주 개판으로 했어
+      얘네 직속 상사 애들은 연봉이랑 보너스 주지마. 뭐든지 위에 애들이 문제야
+
+         >>>>>select ename from emp;
+         >>>>>select ename, mgr from emp where ename in ('SMITH', 'WARD');
+         >>>>>select ename from emp where empno in (7902, 7698);
+         >>>>>select ename, nvl(comm, 0)+100 comm, sal*1.01 SAL from emp where ename not in('BLAKE', 'FORD');
+
+
+
+
+
+ 
+ 
